@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simple Payroll </title>
+    <link rel="stylesheet" href="simplePayroll.css">
+</head>
+
+
+<body class="css-selector">
+    <nav class="navbar">
+        <nav class="navdiv">
+            <div class="logo"><a href="index.html"> BrAnLam.ITC</a> </div>
+            <ul>
+                <li> <a class="highlight" href="conversion.html"> Assignment 1 </a></li>
+                <li> <a class="highlight" href="incomeTaxCalc.html">Assignment 2</a></li>
+                <li> <a class="highlight" href="loops.html"> Assignment 3</a></li>
+                <li> <a class="highlight" href="simplepayroll.html"> Assignment 4</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <h1>Simple Payroll</h1>
+
+    <div class="tableContainer">
+        <table>
+            <thead>
+                <tr>
+                    <td> Employee Number</td>
+                    <td> Employee Name</td>
+                    <td> Days Worked</td>
+                    <td> Daily Rate</td>
+                    <td> Gross Pay</td>
+                    <td> Deduction Amount</td>
+                    <td> Net Pay</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+
+        </table>
+
+        <br>
+        <hr>
+
+
+        <div class="input-form">
+            <div class="form-row">
+                <h4> Input the following information to add it to the table.</h4>
+                <label for="empName">Employee Name:</label>
+                <input id="empName" type="text">
+            </div>
+            <div class="form-row">
+                <label for="empDays">Days Worked:</label>
+                <input id="empDays" type="number" step="1" min="0">
+            </div>
+            <div class="form-row">
+                <label for="empRate">Daily Rate:</label>
+                <input id="empRate" type="number" step="0.1" min="0">
+            </div>
+            <div class="form-row">
+                <label for="empDeduction">Deduction Amount:</label>
+                <input id="empDeduction" type="number" step="0.1" min="0">
+            </div>
+            <button id="btnAdd">Add Employee</button>
+        </div>
+
+        <br><br>
+
+        <div>
+            <label>Delete Emp. No.</label>
+            <input id="delemployee" type="number">
+            <button id="btndelete">Delete</button>
+            <button id="btndeleteall">Delete All</button>
+        </div>
+    </div>
+
+    <dialog id="dlgConfirmCancel">
+        <form method="dialog">
+            <h4 id="dlgmsg"></h4>
+            <div class="dlgbuttons">
+                <button id="btnConfirm" value="confirm">Confirm</button>
+                <button id="btnCancel" value="cancel">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="dlgAreYouSure">
+        <form method="dialog">
+            <h4 id="dlgmsg2"></h4>
+            <div class="dlgbuttons">
+                <button id="btnYes" value="yes">Yes</button>
+                <button id="btnNo" value="no">No</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="simplePayroll.js"></script>
+</body>
+
+</html>

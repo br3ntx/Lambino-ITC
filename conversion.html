@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversion </title>
+    <link rel="stylesheet" href="conversion.css">
+</head>
+
+
+    <body class="css-selector">
+        <nav class="navbar">
+            <nav class="navdiv">
+                <div class="logo"><a href="index.html"> BrAnLam.ITC</a> </div>
+                <ul>
+                    <li> <a class="highlight" href="conversion.html"> Assignment 1 </a></li>
+                    <li> <a class="highlight" href="incomeTaxCalc.html">Assignment 2</a></li>
+                    <li> <a class="highlight" href="loops.html"> Assignment 3</a></li>
+                    <li> <a class="highlight" href="simplepayroll.html"> Assignment 4</a></li>
+                </ul>
+            </nav>
+        </nav>
+
+        <h1> Conversion</h1>
+        <div class="container">
+            <div class="conversionBox">
+                <h3> 1. Fahrenheit to Celsius</h3>
+                <label for="fahInput"> Temperature in Fahrenheit:</label>
+                <input id="fahInput" placeholder="Enter Temperature" type="number">
+                <br>
+                <button id="convertFah"> Convert Fahrenheit to Celsius </button>
+                <button id="clearFah"> Clear </button>
+                <br><br>
+                <label for="fahToCel"> The converted temperature is:</label>
+                <input id="fahToCel" type="number" readonly>
+            </div>
+
+            <div class="conversionBox">
+                <h3> 2. Celsius to Fahrenheit</h3>
+                <label for="celInput"> Temperature in Celsius:</label>
+                <input id="celInput" placeholder="Enter Temperature" type="number">
+                <br>
+                <button id="convertCel"> Convert Celsius to Fahrenheit </button>
+                <button id="clearCel"> Clear </button>
+                <br><br>
+                <label for="celToFah"> The converted temperature is:</label>
+                <input id="celToFah" type="number" readonly>
+            </div>
+
+            <div class="conversionBox">
+                <h3> 3. Meters to Feet</h3>
+                <label for="metersInput"> Length in Meters:</label>
+                <input id="metersInput" placeholder="Enter Length" type="number">
+                <br>
+                <button id="convertMeters"> Convert Meters to Feet </button>
+                <button id="clearMeters"> Clear </button>
+                <br><br>
+                <label for="metersToFeet"> The converted length is:</label>
+                <input id="metersToFeet" type="number" readonly>
+            </div>
+
+            <div class="conversionBox">
+                <h3> 4. Feet to Meters</h3>
+                <label for="feetInput"> Length in Feet:</label>
+                <input id="feetInput" placeholder="Enter Length" type="number">
+                <br>
+                <button id="convertFeet"> Convert Feet to Meters </button>
+                <button id="clearFeet"> Clear </button>
+                <br><br>
+                <label for="feetToMeters"> The converted length is:</label>
+                <input id="feetToMeters" type="number" readonly>
+            </div>
+
+        </div>
+
+        <script src="conversion.js"> </script>
+
+    </body>
+
+</html>
