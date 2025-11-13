@@ -115,7 +115,7 @@ h1 {
   font-family: "Merriweather", Georgia, "Times New Roman", serif;
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
-  color: #e6e6e6; /* or your preferred heading color */
+  color: #e6e6e6; 
   letter-spacing: 1px;
 }
 
@@ -154,3 +154,4 @@ button {
 button:hover {
   background: #5c7aa3;
 }
+
