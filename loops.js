@@ -43,8 +43,11 @@ document.getElementById("computeBtn").addEventListener("click", function () {
     }
     
     errorSpan.textContent = "";
-    document.getElementById("facResult").value = factorial(n);
+    const fac = factorial(n);
+    document.getElementById("facResult").value = (isFinite(fac) ? fac : "Infinity");
     document.getElementById("sumResult").value = sumDoWhile(n);
     document.getElementById("avgResult").value = averageFirstN(n);
 });
+
+
 
